@@ -6,7 +6,7 @@
 /*   By: ddelacou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 23:13:59 by ddelacou          #+#    #+#             */
-/*   Updated: 2022/12/13 23:14:02 by ddelacou         ###   ########.fr       */
+/*   Updated: 2023/04/18 16:49:49 by ddelacou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,6 +104,7 @@ char	*deleteline(char *str, int i)
 		free(str);
 		return (NULL);
 	}
+	size++;
 	while (--size > 0)
 		temp[size - 1] = str[i + size - 1];
 	free(str);
